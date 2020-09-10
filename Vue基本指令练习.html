@@ -20,14 +20,31 @@
 <div id="vue-app2">
     <p>My age is {{ age }}.</p>
 <!--    events includes click,dblclick,mousemove,etc. -->
-    <button v-on:click="add(1)">Add a year</button>
+<!--    event modifiers .once,-->
+    <button v-on:click.once="add(1)">Add a year</button>
     <button @click="subtract(1)">Subtract a year</button>
     <button @dblclick="add(10)">Add 10 year</button>
     <button v-on:dblclick="subtract(10)">Subtract 10 year</button>
-    <!--    canvous 画布 -->
+
+    <!--   event modifiers .prevent : prevent default behavior- -->
+<!--    see more event modifiers at vue.com-->
+    <a v-on:click.prevent="click" href="https://github.com">Github</a>
+
 
 </div>
+
+<!--    canvous 画布 -->
 <div id="canvous" v-on:mousemove="updateXY" >{{ x }} {{ y }}</div>
+
+<!-- keyboard events -->
+<!-- event modifier .enter: only when click 'enter' it works-->
+<div id="vue-app3">
+    <h1>Keyboard events</h1>
+    <label>name:</label>
+    <input type="text" v-on:keyup.alt.enter="logName" />
+    <label>age:</label>
+    <input type="text" v-on:keyup.enter="logAge" />
+</div>
 <script src="lib/app.js"></script>
 </body>
 </html>
