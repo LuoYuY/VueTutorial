@@ -38,12 +38,57 @@
 
 <!-- keyboard events -->
 <!-- event modifier .enter: only when click 'enter' it works-->
+
 <div id="vue-app3">
     <h1>Keyboard events</h1>
     <label>name:</label>
     <input type="text" v-on:keyup.alt.enter="logName" />
     <label>age:</label>
     <input type="text" v-on:keyup.enter="logAge" />
+</div>
+
+<!-- two way data binding -->
+<div id="twoWayDataBinding">
+    <h1>Two Way Data Binding</h1>
+    <label>name:</label>
+    <!--    v-model : attach this input to 'name' which means this input field is associated with the data 'name' -->
+    <input type="text" v-model="name" />
+    <span>{{ name }}</span>
+    <label>age:</label>
+    <input type="text" v-model="age" />
+    <span>{{ age }}</span>
+</div>
+
+<!-- Computed Properties -->
+<div id="computedProperties">
+    <h1>Computed Properties</h1>
+<!--    when one of data attributes changes,all methods run-->
+<!--    while computed functions only run when needed(its own attribute updated) -->
+    <button @click="a++">Add to A</button>
+    <button @click="b++">Add to B</button>
+    <p>A-{{ a }}</p>
+    <p>B-{{ b }}</p>
+<!--    methods -->
+<!--    <p>Age + A = {{ addToA() }}</p>-->
+<!--    <p>Age + B = {{ addToB() }}</p>-->
+
+<!--    computed -->
+    <p>Age + A = {{ addToA }}</p>
+    <p>Age + B = {{ addToB }}</p>
+
+</div>
+
+<div id="dynamicCss">
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+<!--    <div @click="change" v-bind:class="{big:available}">-->
+<!--        <span>HELLO</span>-->
+<!--    </div>-->
+    <div  @click="change"  v-bind:class="compClasses">
+        <span>HELLO</span>
+    </div>
+    <h2>Example 2</h2>
+
 </div>
 <script src="lib/app.js"></script>
 </body>
