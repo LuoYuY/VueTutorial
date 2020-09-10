@@ -19,15 +19,15 @@
 
 <div id="vue-app2">
     <p>My age is {{ age }}.</p>
+<!--    events includes click,dblclick,mousemove,etc. -->
     <button v-on:click="add(1)">Add a year</button>
-    <button v-on:click="subtract(1)">Subtract a year</button>
-    <button v-on:dblclick="add(10)">Add 10 year</button>
+    <button @click="subtract(1)">Subtract a year</button>
+    <button @dblclick="add(10)">Add 10 year</button>
     <button v-on:dblclick="subtract(10)">Subtract 10 year</button>
     <!--    canvous 画布 -->
-    <div id="canvous">
 
-    </div>
 </div>
+<div id="canvous" v-on:mousemove="updateXY" >{{ x }} {{ y }}</div>
 <script src="lib/app.js"></script>
 </body>
 </html>
