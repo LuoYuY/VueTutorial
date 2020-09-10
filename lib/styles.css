@@ -4,3 +4,10 @@
     text-align:center;
     border:1px solid #333;
 }
+.big span{
+    font-size: 100px;
+}
+.red span{
+    color: red;
+}
+
