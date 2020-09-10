@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar practice</title>
+    <link href="lib/styles.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<div id="vue-app1">
+<!--    conditional if else-->
+    <h1>Conditionals</h1>
+<!--    toggle切换-->
+    <button v-on:click="error = !error">Toggle Error</button>
+    <button v-on:click="success = !success" >Toggle Success</button>
+
+<!-- first,it will check 'v-if',if v-if=true , the <p error> tag show,else the tag disappear immediately -->
+<!-- only when 'v-if=false',it will check 'v-else-if'-->
+<!--
+    <p v-if="error">There is an error.</p>
+    <p v-else-if="success">Whooo,success:)</p>
+     -->
+
+<!--    if v-show=false,the element style will be 'display:none',but the element exists in DOM structure-->
+    <p v-show="error">There is an error.</p>
+    <p v-show="success">Whooo,success:)</p>
+
+</div>
+
+
+
+<div id="vue-app2">
+    <!-- Looping with v-for-->
+    <h1>Looping through lists</h1>
+    <ul>
+        <li v-for="x in characters">{{ x }}</li>
+    </ul>
+    <ul>
+        <li v-for="user in users">Name:{{ user.name }}-Age:{{ user.age }}</li>
+        <li v-for="(user,index) in users">{{ index }}.Name:{{ user.name }}-Age:{{ user.age }}</li>
+    </ul>
+    <div v-for="(user,index) in users">
+        <h3>{{ index+1 }}.{{ user.name }}</h3>
+        <p>Age:{{ user.age }}</p>
+    </div>
+
+    <template v-for="(user,index) in users">
+        <h3>{{ index+1 }}.{{ user.name }}</h3>
+        <p>Age:{{ user.age }}</p>
+    </template>
+
+    <div v-for="(user,index) in users">
+        <div v-for="(val,key) in user">
+            <p>{{ key }}:{{ val }}</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script src="lib/grammarPractice.js"></script>
+</body>
+</html>
