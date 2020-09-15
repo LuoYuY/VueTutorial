@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3dfbb88-70b5-4190-8156-89a0d3c3077b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/punchbag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/punchbaggame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/punchbag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/punchbag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/punchbaggame.html" beforeDir="false" afterPath="$PROJECT_DIR$/punchbaggame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
       <updated>1599708288288</updated>
       <workItem from="1599708289505" duration="4215000" />
       <workItem from="1599713540359" duration="12273000" />
-      <workItem from="1600068911755" duration="1773000" />
+      <workItem from="1600068911755" duration="2769000" />
     </task>
     <task id="LOCAL-00001" summary="vue events v-on:click,dblclick,mousemove,etc.">
       <created>1599718766819</created>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599744534292</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add git grammar: conditional,looping">
+      <created>1600151881719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151881719</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,10 +102,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add git grammar: conditional,looping" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="139" width="860" height="847" key="CommitChangelistDialog2" timestamp="1599744534213">
+    <state x="527" y="139" width="860" height="847" key="CommitChangelistDialog2" timestamp="1600151881600">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="527" y="139" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1599744534213" />
+    <state x="527" y="139" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1600151881600" />
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1599744551967">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
